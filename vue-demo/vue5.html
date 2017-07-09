@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <el-date-picker v-model="endTime" type="datetime" placeholder="选择日期时间">
+        </el-date-picker>
+        <el-button @click="handleSave">保存</el-button>
+        <div>{{ message }}</div>
+    </div>
+</body>
+<!-- 先引入 Vue -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+new Vue({
+    el: '#app',
+    data: function() {
+        return {
+            message: "张三",
+            endTime: ''
+        }
+    },
+    methods: {
+        handleSave: function() {
+            this.message = this.formatDate(this.endTime,false, 'dd')
+          // this.message = this.endTime.getFullYear()
+          // this.message = this.endTime.getMonth()+1
+          // this.message = this.endTime.getSeconds()
+          // console.log( typeof this.endTime.getSeconds())
+          let ua = window.navigator.userAgent
+          console.log(window);
+
+        },
+        formatDate: function(date, showTime = false, format = 'yyyy-MM-dd') {
+            let day = date.getDate()
+            let month = date.getMonth() + 1
+            let year = date.getFullYear()
+            let hours = date.getHours()
+            let minutes = date.getMinutes()
+            let seconds = date.getSeconds()
+
+            if (showTime) {
+                format = 'yyyy-MM-dd hh:mm:ss'
+            }
+
+            format = format.replace('MM', month.toString().replace(/^(\d)$/, '0$1'))
+
+            if (format.indexOf('yyyy') > -1) {
+                format = format.replace('yyyy', year.toString())
+            } else if (format.indexOf('yy') > -1) {
+                format = format.replace('yy', year.toString().substr(2, 2))
+            }
+
+            format = format.replace('dd', day.toString().replace(/^(\d)$/, '0$1'))
+
+            if (format.indexOf('t') > -1) {
+                if (hours > 11) {
+                    format = format.replace('t', 'pm')
+                } else {
+                    format = format.replace('t', 'am')
+                }
+            }
+
+            if (format.indexOf('HH') > -1) {
+                format = format.replace('HH', hours.toString().replace(/^(\d)$/, '0$1'))
+            }
+
+            if (format.indexOf('hh') > -1) {
+                if (hours > 12) {
+                    hours -= 12
+                }
+
+                if (hours === 0) {
+                    hours = 12
+                }
+                format = format.replace('hh', hours.toString().replace(/^(\d)$/, '0$1'))
+            }
+
+            if (format.indexOf('mm') > -1) {
+                format = format.replace('mm', minutes.toString().replace(/^(\d)$/, '0$1'))
+            }
+
+            if (format.indexOf('ss') > -1) {
+                format = format.replace('ss', seconds.toString().replace(/^(\d)$/, '0$1'))
+            }
+
+            return format
+        },
+    }
+})
+</script>
+
+</html>

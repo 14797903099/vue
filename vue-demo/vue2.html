@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
+</head>
+<body>
+  <div id="app">
+    <div class="box">
+     <!--  <el-row>
+        <el-col :span="12" class="g">1</el-col>
+        <el-col :span="12" class="r">2</el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="8" class="r">3</el-col>
+        <el-col :span="8" class="g">4</el-col>
+        <el-col :span="8" class="r">4</el-col>
+      </el-row> -->
+      <el-row>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+      </el-row>
+      <!-- 重复开始了 -->
+      <el-row>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+      </el-row><el-row>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+      </el-row><el-row>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+      </el-row><el-row>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+      </el-row><el-row>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+      </el-row><el-row>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+      </el-row><el-row>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+      </el-row><el-row>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+      </el-row><el-row>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+      </el-row><el-row>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+        <el-col :span="1" class="r"></el-col>
+        <el-col :span="1" class="y"></el-col>
+        <el-col :span="1" class="g"></el-col>
+      </el-row>
+    </div>  
+  </div>
+</body>
+  <!-- 先引入 Vue -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <style>
+    *{
+      margin: 0 auto;
+    }
+    .box{
+      margin:0 auto;
+      width: 1200px;
+      /*background: #ccc;*/
+      height: 400px;
+    }
+    .g{
+      background: green;
+    }
+    .r{
+      background: #f99;
+    }
+    .y{
+      background: yellow;
+    }
+    .el-col{
+      height: 40px;
+    }
+  </style>
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return { 
+         
+        }
+      },
+      methods:{
+
+      }
+    })
+  </script>
+</html>
